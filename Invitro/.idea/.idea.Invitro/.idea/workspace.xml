@@ -10,31 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="799b4ee2-7d5b-4800-8e63-a1e91c1daa57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/AdminController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/ClientController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/DoctorController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/RegistrationController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dto/AppointmentDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dto/DepartmentDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dto/DoctorDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dto/ProcedureDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/ApiRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Appointment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/BaseDbItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Department.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Doctor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Procedure.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/RegisterModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/IAppointmentHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/IDepartmentHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/IProcedureHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/IRegistrationHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/FamilyController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dto/ChildDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Analysis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Child.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/IFamilyHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Invitro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Invitro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invitro.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Invitro.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/DoctorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/DoctorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/RegistrationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/RegistrationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +42,10 @@
     &quot;accountId&quot;: &quot;5265cb67-76a9-4970-84d7-bf9418dbbb4c&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Controllers/DoctorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/RegistrationController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="SWEA" />
   </component>
@@ -145,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727467912243</updated>
-      <workItem from="1727467914045" duration="5830000" />
+      <workItem from="1727467914045" duration="12364000" />
     </task>
     <servers />
   </component>

@@ -13,5 +13,9 @@ public class ApplicationDbContext : DbContext
     public DbSet<Procedure> Procedures { get; set; }
     public DbSet<Appointment> Appointments { get; set; }
     public DbSet<Department> Departments { get; set; }
+    public DbSet<Child> Children { get; set; }
+    public DbSet<Analysis> Analyses { get; set; }
+    
+    
     
 }

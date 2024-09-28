@@ -11,5 +11,5 @@ public class User : BaseDbItem
     public string? gender { get; set; }
     public string? barcode { get; set; }
     public string? identificationNumber { get; set; }
-    
+    public List<Child> children { get; set; } = new List<Child>();
 }

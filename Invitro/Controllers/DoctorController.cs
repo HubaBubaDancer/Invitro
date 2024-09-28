@@ -1,10 +1,15 @@
 using Invitro.Dto;
 using Invitro.Models;
 using Invitro.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Invitro.Controllers;
 
+
+[Authorize(Roles = "Doctor,Admin")]
+[Route("api/[controller]")]
+[ApiController]
 public class DoctorController : Controller
 {
     private readonly IProcedureHandler _procedureHandler;

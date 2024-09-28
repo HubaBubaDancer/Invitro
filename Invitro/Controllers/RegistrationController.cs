@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Invitro.Controllers;
 
+[AllowAnonymous]
+[Route("api/[controller]")]
+[ApiController]
 public class RegistrationController : Controller
 {
     private readonly IRegistrationHandler _registration;

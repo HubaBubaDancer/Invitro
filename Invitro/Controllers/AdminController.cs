@@ -1,9 +1,13 @@
 using Invitro.Dto;
 using Invitro.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Invitro.Controllers;
 
+[Authorize(Roles = "Admin")]
+[Route("api/[controller]")]
+[ApiController]
 public class AdminController : Controller
 {
     
