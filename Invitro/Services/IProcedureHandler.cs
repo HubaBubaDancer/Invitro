@@ -12,12 +12,12 @@ public interface IProcedureHandler
     public Task<List<ProcedureDto>> GetNonArchivedProcedures();
 }
 
-public class ProceduresHandler : IProcedureHandler
+public class ProcedureHandler : IProcedureHandler
 {
 
     private readonly ApplicationDbContext _context;
 
-    public ProceduresHandler(ApplicationDbContext context)
+    public ProcedureHandler(ApplicationDbContext context)
     {
         _context = context;
     }

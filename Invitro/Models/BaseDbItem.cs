@@ -9,7 +9,7 @@ public class BaseDbItem
     public BaseDbItem()
     {
         Id = Guid.NewGuid();
-        CreatedAt = DateTime.Now;
-        UpdatedAt = DateTime.Now;
+        CreatedAt = DateTime.UtcNow;
+        UpdatedAt = DateTime.UtcNow;
     }
 }

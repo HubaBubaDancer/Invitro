@@ -2,6 +2,7 @@ using Invitro;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Invitro.Areas.Identity.Data;
+using Invitro.Services;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,7 +17,13 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(o => o.SignIn.RequireConfir
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<AuthDbContext>();
 
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<AuthDbContext>();
+builder.Services.AddTransient<IAppointmentHandler, AppointmentHandler>();
+builder.Services.AddTransient<IDepartmentHandler, DepartmentHandler>();
+builder.Services.AddTransient<IFamilyHandler, FamilyHandler>();
+builder.Services.AddTransient<IProcedureHandler, ProcedureHandler>();
+builder.Services.AddTransient<IRegistrationHandler, RegistrationHandler>();
+
+
 
 builder.Services.AddControllersWithViews();
     
@@ -63,6 +70,10 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.MapRazorPages();
 

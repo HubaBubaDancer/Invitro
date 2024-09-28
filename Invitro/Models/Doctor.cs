@@ -7,7 +7,7 @@ public class Doctor : BaseDbItem
     public string lastName { get; set; }
     public string firstName { get; set; }
     public string? patronymicName { get; set; }
-    public DateTime birthDate { get; set; }
+    public DateTime birthDate { get; set; } = DateTime.UtcNow;
     public string? gender { get; set; }
     public string? barcode { get; set; }
     public string? identificationNumber { get; set; }

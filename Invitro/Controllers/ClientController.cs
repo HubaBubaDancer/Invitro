@@ -1,3 +1,4 @@
+using System.ComponentModel.Design;
 using Invitro.Dto;
 using Invitro.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -12,11 +13,13 @@ public class ClientController : Controller
     
     private readonly IProcedureHandler _procedureHandler;
     private readonly IAppointmentHandler _appointmentHandler;
+    private readonly IDepartmentHandler _departmentHandler;
 
-    public ClientController(IProcedureHandler procedureHandler, IAppointmentHandler appointmentHandler)
+    public ClientController(IProcedureHandler procedureHandler, IAppointmentHandler appointmentHandler, IDepartmentHandler departmentHandler)
     {
         _procedureHandler = procedureHandler;
         _appointmentHandler = appointmentHandler;
+        _departmentHandler = departmentHandler;
     }
 
     [AllowAnonymous]
@@ -37,6 +40,12 @@ public class ClientController : Controller
     public async Task<IActionResult> GetReservedDates()
     {
         return Ok(await _appointmentHandler.GetReservedDates());
+    }
+    
+    [HttpGet("get-departments")]
+    public async Task<IActionResult> GetDepartments()
+    {
+        return Ok(await _departmentHandler.GetDepartments());
     }
     
 }
